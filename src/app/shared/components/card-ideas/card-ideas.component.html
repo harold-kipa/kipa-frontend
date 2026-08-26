@@ -1,0 +1,23 @@
+
+@if (type === 'primary') {
+    <div class="glass-card p-5 font-semibold flex flex-column gap-2 w-full">
+        <div style="color: #480A91" class="font-bold">{{ description }}</div>
+        <div class="font-bold text-xl" style="color: #371460;">{{ title }}</div>
+        <div class="opacity-30">{{ text }}</div>
+        <div style="color: #480A91;" class="font-semibold flex flex-row align-items-center gap-6 cursor-pointer mt-auto">
+            <div class="">Ver más</div>
+            <i class="pi pi-arrow-right"></i>
+        </div>
+    </div>
+}
+@else {
+    <div style="background-color: white;" class="p-6 font-semibold flex flex-column gap-4 w-full">
+        <div style="background-color: #EDE5FA; color: #480A91" class="w-5rem px-3 font-bold">{{ description }}</div>
+        <div class="font-bold text-xl" style="color: #480A91;">{{ title }}</div>
+        <div class="opacity-30">{{ text }}</div>
+        <div style="color: #480A91;" class="font-semibold flex flex-row align-items-center gap-6 cursor-pointer mt-auto">
+            <div class="">Leer</div>
+            <i class="pi pi-arrow-right"></i>
+        </div>
+    </div>
+}

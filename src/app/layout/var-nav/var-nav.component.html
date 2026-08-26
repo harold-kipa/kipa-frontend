@@ -1,0 +1,92 @@
+<div
+    style="background-color: #F0EDE6;"
+    class="flex justify-content-between align-items-center px-4 relative"
+>
+    <!-- Logo -->
+    <div>
+        <a routerLink="/home">
+            <img
+                src="/assets/Isotipo_Principal.svg"
+                width="64"
+                height="auto"
+            />
+        </a>
+    </div>
+
+    <!-- Menú escritorio -->
+    <div class="hidden md:flex align-items-center">
+        <a routerLink="/chat-ia" class="button-var-nav">Inicio</a>
+        <a routerLink="/file-manager" class="button-var-nav">Nosotros</a>
+        <a routerLink="/users" class="button-var-nav">Consultoría</a>
+        <a routerLink="/dashboard" class="button-var-nav">Soluciones IA</a>
+        <a routerLink="/develop" class="button-var-nav">Academia</a>
+        <a routerLink="/develop" class="button-var-nav">Fintech</a>
+        <a routerLink="/develop" class="button-var-nav">Comunidad</a>
+    </div>
+
+    <!-- Botón escritorio -->
+    <div class="hidden md:flex align-items-center m-2 button-var-right">
+        Conversemos
+    </div>
+
+    <!-- Hamburguesa móvil -->
+    <i
+        class="pi md:hidden cursor-pointer"
+        [ngClass]="menuOpen ? 'pi-times' : 'pi-bars'"
+        style="font-size: 2.5rem"
+        (click)="menuOpen = !menuOpen">
+    </i>
+</div>
+
+<!-- Menú móvil -->
+<div
+    *ngIf="menuOpen"
+    style="background-color: #F0EDE6;"
+    class="md:hidden flex flex-column px-4 pb-4"
+>
+    <a routerLink="/chat-ia"
+       class="button-var-nav"
+       (click)="menuOpen = false">
+        Inicio
+    </a>
+
+    <a routerLink="/file-manager"
+       class="button-var-nav"
+       (click)="menuOpen = false">
+        Nosotros
+    </a>
+
+    <a routerLink="/users"
+       class="button-var-nav"
+       (click)="menuOpen = false">
+        Consultoría
+    </a>
+
+    <a routerLink="/dashboard"
+       class="button-var-nav"
+       (click)="menuOpen = false">
+        Soluciones IA
+    </a>
+
+    <a routerLink="/develop"
+       class="button-var-nav"
+       (click)="menuOpen = false">
+        Academia
+    </a>
+
+    <a routerLink="/develop"
+       class="button-var-nav"
+       (click)="menuOpen = false">
+        Fintech
+    </a>
+
+    <a routerLink="/develop"
+       class="button-var-nav"
+       (click)="menuOpen = false">
+        Comunidad
+    </a>
+
+    <div class="button-var-right mt-3">
+        Conversemos
+    </div>
+</div>
