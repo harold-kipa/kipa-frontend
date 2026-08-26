@@ -1,3 +1,11 @@
-<app-var-nav></app-var-nav>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div style="min-width: 1284px" class="md:block hidden w-full">
+    <app-var-nav class=""></app-var-nav>
+    <router-outlet class="w-full"></router-outlet>
+    <app-footer class="w-full"></app-footer>
+</div>
+
+<div class="md:hidden">
+    <app-var-nav></app-var-nav>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</div>

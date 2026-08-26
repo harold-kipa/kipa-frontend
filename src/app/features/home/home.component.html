@@ -1,80 +1,84 @@
 
-<div style="background-color: #F0EDE6; min-width:1470px">
+<div style="background-color: #F0EDE6;">
     <div style="background-image: url('/assets/Background HERO.png');
         background-size: cover;" class="p-3">
-        <div class="flex flex-row justify-content-center align-items-center">
-            <div class="w-6">
+
+        <section #handsSection class="hands-section md:flex hidden">
+            <div class=" hands-container">
                 <img
                     src="/assets/Mano humana HERO.png"
-                    width="100%"
                     height="auto"
+                    class="hand hand-left"
+                    [style.transform]="leftTransform"
+                    alt=""
                 />
-            </div>
-            <div class="w-6">
                 <img
                     src="/assets/Mano IA HERO.png"
-                    width="100%"
                     height="auto"
+                    class="hand hand-right"
+                    [style.transform]="rightTransform"
+                    alt=""
                 />
+                
             </div>
-        </div>
+        </section>
         <div>
-            <div style="font-family:poppins; font-weight: 900; color: #480A91; letter-spacing: -4px; font-size: 12rem;">Somos Kipa</div>
-            <div class="text-7xl w-6 font-semibold" style="color: #0E6191">Transformamos datos de IA en resultados</div>
-            <div class="flex justify-content-center gap-8 p-8">
+            <div class="kipa-title">Somos Kipa</div>
+            <div class="md:text-7xl text-2xl md:w-6 w-8 font-semibold" style="color: #0E6191">Transformamos datos de IA en resultados</div>
+            <div class="flex justify-content-center md:gap-8 gap-4 md:p-8 p-4">
                 <app-button value="Hablemos de tu reto"></app-button>
                 <app-button type="secondary" value="Conoce nuestras soluciones"></app-button>
             </div>
         </div>
     </div>
-    <div style="background-image: url('/assets/Rectangle.png');" class="p-8 text-lg flex flex-row gap-8">
-        <div class="w-5 flex gap-5 flex-column">
-            <div style="color: #480A91;" class="font-semibold text-4xl">Soluciones</div>
-            <div style="color: #371460;" class="text-8xl line-height-1">Seis formas de generar <div style="color: #480A91;">impacto</div></div>
-            <div class="text-2xl">Acompañamos a las organizaciones en cada paso de su evolución analítica y digital.</div>
-            <div style="color: #480A91;" class="font-semibold flex flex-row align-items-center gap-6 cursor-pointer text-2xl">
+    <div style="background-image: url('/assets/Rectangle.png');" class="md:p-8 p-4 text-lg flex flex-column md:flex-row md:gap-8 gap-4">
+        <div class="md:w-5 flex gap-5 flex-column">
+            <div style="color: #480A91;" class="font-semibold md:text-4xl text-sm">Soluciones</div>
+            <div style="color: #371460;" class="md:text-8xl text-4xl line-height-1">Seis formas de generar <div style="color: #480A91;">impacto</div></div>
+            <div class="text-xl">Acompañamos a las organizaciones en cada paso de su evolución analítica y digital.</div>
+            <div style="color: #480A91;" class="font-semibold flex flex-row align-items-center gap-6 cursor-pointer md:text-2xl text-sm">
                 <div>Ver todas las soluciones</div>
                 <i class="pi pi-arrow-right"></i>
             </div>
         </div>
-        <div class="flex flex-wrap align-items-stretch align-content-start gap-2 w-7">
+        <div class="flex flex-wrap md:align-items-stretch align-content-start gap-2 md:w-7">
             <app-card-ideas
-                class="w-22rem"
+                class="md:w-18rem w-full"
                 type="primary"
                 description="Consultoría" 
                 title="YACHAI" 
                 text="Analítica Avanzada e BI">
             </app-card-ideas>
             <app-card-ideas
-                class="w-22rem"
+                class="md:w-18rem w-full"
                 type="primary"
                 description="Finanzas" 
                 title="YUPANA" 
                 text="Modelación Financiera con IA">
             </app-card-ideas>
             <app-card-ideas
-                class="w-22rem"
+                class="md:w-18rem w-full"
                 type="primary"
                 description="IA Aplicada" 
                 title="AMAUTA" 
                 text="Asistentes inteligentes · ThinkBots">
             </app-card-ideas>
             <app-card-ideas
-                class="w-22rem"
+                class="md:w-18rem w-full"
                 type="primary"
                 description="Producto IA" 
                 title="YUYAY X" 
                 text="9 soluciones de IA para negocios">
             </app-card-ideas>
             <app-card-ideas
-                class="w-22rem"
+                class="md:w-18rem w-full"
                 type="primary"
                 description="Estrategia" 
                 title="KUSKA" 
                 text="Data Strategy & Governance">
             </app-card-ideas>
             <app-card-ideas
-                class="w-22rem"
+                class="md:w-18rem w-full"
                 type="primary"
                 description="Formación" 
                 title="Academia 4.0" 
@@ -83,36 +87,45 @@
         </div>
     </div>
     <div>
-        <div style="font-family:poppins; font-weight: 900; letter-spacing: -4px; font-size: 9rem" class="line-height-1 p-8">
+        <div class="kipa-title-2 line-height-1 md:p-8 px-4 py-6">
             <div style="color: #480A91;">Hacemos simple</div>
-            <div class="flex flex-row gap-4 w-full justify-content-end align-items-center pr-8">
+            <div class="flex flex-row md:gap-4 gap-2 w-full justify-content-end align-items-center">
                 <div style="color: #0E6191;">lo</div>
-                <div style="color: white; -webkit-text-stroke: 2px #371460; font-size: 11rem">complejo</div>
+                <div class="kipa-title-3">complejo</div>
             </div>
         </div>
-        <div style="color: #371460;" class="text-lg text-center font-italic font-semibold">Partner de Microsoft · Bogotá, Colombia · Fundada 2019</div>
-        <div style="color: white; background-color:black; border-radius: 3rem; gap: 9rem;" class="p-8 flex flex-column">
-            <div class="flex">
-                <div class="w-6 line-height-1 text-2xl flex flex-column">
-                    <div style="font-family:poppins;" class="font-bold text-2xl">Casos de impacto</div>
-                    <div style="font-family:poppins; font-weight: 900; letter-spacing: -4px; font-size: 7rem" class="line-height-1">Historias reales</div>
-                    <div style="font-family:poppins; letter-spacing: -4px; font-size: 7rem">Resultados</div>
-                    <div style="font-family:poppins; letter-spacing: -4px; font-size: 7rem; color: #0E6191;" class="font-italic">medibles</div>
-                    <div class="py-5">Conoce cómo ayudamos a organizaciones a tomar mejores decisiones y lograr resultados extraordinarios</div>
+        <div style="color: #371460;" class="md:text-lg text-xs text-center font-italic font-semibold pb-3">Partner de Microsoft · Bogotá, Colombia · Fundada 2019</div>
+        <div style="color: white; background-color:black; border-radius: 3rem;" class="md:p-8 p-4 flex flex-column md:gap-8 gap-4">
+            <div class="md:hidden flex justify-content-end flex-wrap">
+                <img
+                    src="/assets/microsoft-partner-logo 1.svg"
+                    width="40%"
+                    height="auto"
+                />
+            </div>
+            <div class="flex flex-column md:flex-row md:gap-8 gap-3">
+                <div class="md:w-6 line-height-1 text-2xl flex flex-column md:gap-0 gap-3">
+                    <div style="font-family:poppins;" class="font-bold md:text-2xl text-sm">Casos de impacto</div>
+                    <div class="kipa-title-4">
+                        <div style="font-weight: 900;" class="line-height-1">Historias reales</div>
+                        <div>Resultados</div>
+                        <div style="color: #0E6191;" class="font-italic">medibles</div>
+                    </div>
+                    <div class="md:py-5 md:text-base text-sm">Conoce cómo ayudamos a organizaciones a tomar mejores decisiones y lograr resultados extraordinarios</div>
                     <!-- <div class="text-lg font-bold p-4 rounded-lg w-18rem flex justify-content-center align-items-center" style="background-color: #480A91;">Ver casos de éxito</div> -->
-                    <app-button class="w-20rem" value="Ver casos de éxito"></app-button>
+                    <app-button class="w-20rem md:inline hidden" value="Ver casos de éxito"></app-button>
                 </div>
-                <div class="w-6">
-                    <div class="pl-8 pb-8">
+                <div class="md:w-6">
+                    <div class="pl-8 pb-8 md:inline hidden">
                         <img
                             src="/assets/microsoft-partner-logo 1.svg"
                             width="70%"
                             height="auto"
                         />
                     </div>
-                    <div class="flex flex-column gap-1 p-8">
-                        <div>Algunos aliados</div>
-                        <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between">
+                    <div class="flex flex-column gap-1 md:p-8">
+                        <div class="font-semibold py-3">Algunos aliados</div>
+                        <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between h-3rem">
                             <div>Bancolombia</div>
                             <img
                                 src="/assets/Logo_Bancolombia 1.svg"
@@ -120,7 +133,7 @@
                                 height="auto"
                             />
                         </div>
-                        <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between">
+                        <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between h-3rem">
                             <div>Grupo Sura</div>
                             <img
                                 src="/assets/logo-grupo-sura- 1.svg"
@@ -128,7 +141,7 @@
                                 height="auto"
                             />
                         </div>
-                        <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between">
+                        <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between h-3rem">
                             <div>Grupo Bavaria</div>
                             <img
                                 src="/assets/LOGO-BAVARIA-BLANCO 1.svg"
@@ -136,7 +149,7 @@
                                 height="auto"
                             />
                         </div>
-                        <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between">
+                        <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between h-3rem">
                             <div>Compensar</div>
                             <img
                                 src="/assets/Logo_Compensar 1.svg"
@@ -144,7 +157,7 @@
                                 height="auto"
                             />
                         </div>
-                        <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between">
+                        <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between h-3rem">
                             <div>Steckerl Aceros</div>
                             <img
                                 src="/assets/LOGOS-WEB-STECKERL 1.svg"
@@ -153,27 +166,30 @@
                             />
                         </div>
                     </div>
+                    <div class="py-3">
+                        <app-button class="w-20rem md:hidden" value="Ver casos de éxito"></app-button>
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-column gap-8">
-                <div class="text-xl font-semibold" style="color: #67BCED;">Lo que dicen nuestros clientes</div>
-                <div class="flex gap-5">
-                    <div class="client-text px-6 pb-6 flex gap-3 flex-column">
-                        <div class="text-6xl opacity-30" style="color: #480A91;">"</div>
+            <div class="flex flex-column md:gap-8">
+                <div class="text-base font-semibold" style="color: #67BCED;">Lo que dicen nuestros clientes</div>
+                <div class="flex md:flex-row flex-column gap-5 md:p-0 py-4 px-4">
+                    <div class="client-text md:px-6 md:pb-6 p-4 flex gap-3 flex-column">
+                        <div class="text-6xl opacity-30 md:inline hidden" style="color: #480A91;">"</div>
                         <div class="text-lg font-semibold">KIPA nos ayudó a transformar nuestros reportes en decisiones inteligentes. +250 reportes que ahorraron costos y mejoraron la productividad.</div>
                         <div class="text-4xl font-semibold" style="color: #480A91;">__</div>
                         <div class="text-xl font-bold" style="color: #480A91;">CEO</div>
                         <div class="opacity-30">Steckerl Aceros</div>
                     </div>
-                    <div class="client-text px-6 pb-6 flex gap-3 flex-column">
-                        <div class="text-6xl opacity-30" style="color: #480A91;">"</div>
+                    <div class="client-text md:px-6 md:pb-6 p-4 flex gap-3 flex-column">
+                        <div class="text-6xl opacity-30 md:inline hidden" style="color: #480A91;">"</div>
                         <div class="text-lg font-semibold">Los procesos de formación en Analítica, Power BI e IA aplicada con KIPA nos abrió a otro horizonte. Práctico, accesible y con enfoque real.</div>
                         <div class="text-4xl font-semibold" style="color: #480A91;">__</div>
                         <div class="text-xl font-bold" style="color: #480A91;">Directivo</div>
                         <div class="opacity-30">Grupo Empresarial</div>
                     </div>
-                    <div class="client-text px-6 pb-6 flex gap-3 flex-column">
-                        <div class="text-6xl opacity-30" style="color: #480A91;">"</div>
+                    <div class="client-text md:px-6 md:pb-6 p-4 flex gap-3 flex-column">
+                        <div class="text-6xl opacity-30 md:inline hidden" style="color: #480A91;">"</div>
                         <div class="text-lg font-semibold">Implementamos automatización con Power Automate gracias a KIPA. Ahorro de tiempo y mejora en procesos desde el primer mes.</div>
                         <div class="text-4xl font-semibold" style="color: #480A91;">__</div>
                         <div class="text-xl font-bold" style="color: #480A91;">Jefe de Operaciones</div>
@@ -182,42 +198,46 @@
                 </div>
             </div>
         </div>
-        <div class="flex p-8">
-            <div class="flex w-full">
-                <div class="w-5 flex flex-column gap-3">
-                    <div style="color: #371460;" class="text-8xl line-height-1 font-semibold">Ideas que mueven decisiones</div>
-                    <div style="color: #0E6191;" class="text-xl font-semibold w-7">Análisis, artículos y recursos sobre datos, IA y negocio.</div>
-                    <div style="color: #480A91;" class="p-5 w-10rem font-semibold flex flex-row align-items-center gap-6 cursor-pointer">
+        <div class="flex md:p-8 px-4 pt-6">
+            <div class="flex md:flex-row flex-column w-full">
+                <div class="md:w-5 flex flex-column gap-3">
+                    <div style="color: #371460;" class="md:text-8xl text-4xl line-height-1 font-semibold">Ideas que mueven decisiones</div>
+                    <div style="color: #0E6191;" class="text-base font-semibold md:w-7 md:p-0 py-4">Análisis, artículos y recursos sobre datos, IA y negocio.</div>
+                    <div style="color: #480A91;" class="p-5 w-10rem font-semibold md:flex hidden flex-row align-items-center gap-6 cursor-pointer">
                         <div>Ir a recursos</div>
                         <i class="pi pi-arrow-right"></i>
                     </div>
                 </div>
-                <div class="flex w-7 gap-1">
+                <div class="flex md:w-7 gap-1">
                     <app-card-ideas 
-                        class="w-4 h-full"
+                        class="md:w-4 w-6 h-full"
                         description="Artículo" 
                         title="IA Generativa: del hype a la implementación real" 
                         text="Cómo las organizaciones adoptan GenAI más allá de los casos obvios.">
                     </app-card-ideas>
                     <app-card-ideas 
-                        class="w-4 h-full"
+                        class="md:w-4 w-6 h-full"
                         description="Webinar" 
                         title="Cómo construir una cultura data-driven" 
                         text="Lecciones de más de 100 proyectos de analítica en LATAM.">
                     </app-card-ideas>
                     <app-card-ideas 
-                        class="w-4 h-full"
+                        class="w-4 h-full md:flex hidden"
                         description="Report" 
                         title="5 tendencias de analítica para 2025" 
                         text="El panorama de la inteligencia de datos en empresas latinas.">
                     </app-card-ideas>
                 </div>
+                <div style="color: #480A91;" class="md:hidden p-5 w-10rem font-semibold flex flex-row align-items-center gap-6 cursor-pointer">
+                    <div>Ir a recursos</div>
+                    <i class="pi pi-arrow-right"></i>
+                </div>
             </div>
         </div>
     </div>
-    <div style="color: white; background-color:black; gap: 4rem;" class="p-8 flex">
-        <div class="w-6 flex flex-column gap-5">
-            <div style="font-family: Poppins; letter-spacing: -4px; font-size: 5rem;" class="line-height-1">
+    <div style="color: white; background-color:black; gap: 4rem;" class="md:p-8 p-4 flex flex-column md:flex-row">
+        <div class="md:w-6 flex flex-column gap-5">
+            <div style="font-family: Poppins; letter-spacing: -4px;" class="md:text-7xl text-5xl line-height-1">
                 ¿Listo para tomar mejores decisiones con tus
                 <span style="color: #0E6191; font-style: italic;">
                     datos?
@@ -229,7 +249,7 @@
                 <app-button type="tertiary" value="Escríbenos"></app-button>
             </div>
         </div>
-        <div class="w-6 flex flex-column gap-4 p-8">
+        <div class="md:w-6 flex flex-column gap-4 md:p-8">
             <div class="p-4 border-600 border-1 flex flex-column gap-2 border-600">
                 <div>Escríbenos</div>
                 <div>hola@kipalatam.com</div>
