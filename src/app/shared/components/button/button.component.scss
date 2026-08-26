@@ -1,0 +1,15 @@
+.glass-button {
+  background: #480A9130;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  color: white;
+  padding: 12px 24px;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
