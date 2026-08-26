@@ -3,13 +3,13 @@ import { VarNavComponent } from './layout/var-nav/var-nav.component';
 import { LayoutComponent } from './layout/layout.component';
 
 export const routes: Routes = [
+    // {
+    //     path: '',
+    //     redirectTo: '/auth',
+    //     pathMatch: 'full',
+    // },
     {
         path: '',
-        redirectTo: '/auth',
-        pathMatch: 'full',
-    },
-    {
-        path: 'auth',
         loadComponent: () =>
             import('./layout/layout.component').then(m => m.LayoutComponent),
             children: [
@@ -19,10 +19,20 @@ export const routes: Routes = [
                             import('./features/home/home.component').then(m => m.HomeComponent),
                         
                     },
+                    {
+                        path: 'nosotros',
+                        loadComponent: () =>
+                            import('./features/us/us.component').then(m => m.UsComponent),
+                        
+                    },
+                    {
+                        path: '**',
+                        redirectTo: '/home',
+                    },
                 ]
     },
-    // {
-    //     path: '**',
-    //     redirectTo: '/auth',
-    // },
+    {
+        path: '**',
+        redirectTo: '',
+    },
 ];

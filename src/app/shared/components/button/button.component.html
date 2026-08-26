@@ -1,17 +1,17 @@
 @if (type === 'primary') {
-    <div class="text-lg font-bold p-5 rounded-lg flex justify-content-center align-items-center shadow-6" style="background-color: white; color: #480A91; border-radius: 0rem 3rem 3rem 2.5rem;">
+    <div class="md:text-lg text-sm font-bold md:p-5 p-3 rounded-lg flex justify-content-center align-items-center text-center shadow-6" style="background-color: white; color: #480A91; border-radius: 0rem 3rem 3rem 2.5rem;">
         {{ value }}
     </div>
 }@else if (type === 'secondary') {
-    <div class="glass-button text-lg font-bold p-5 rounded-lg flex justify-content-center align-items-center" style="color: #0E6191;">
+    <div class="glass-button md:text-lg text-sm font-bold md:p-5 p-3 rounded-lg flex justify-content-center align-items-center text-center" style="color: #0E6191;">
         {{ value }}
     </div>
 }@else if (type === 'tertiary') {
-    <div class="text-lg font-bold p-5 rounded-lg flex justify-content-center align-items-center opacity-40" style="border: 1px solid #ccc;">
+    <div class="md:text-lg text-sm font-bold md:p-5 p-3 rounded-lg flex justify-content-center align-items-center text-center opacity-70" style="border: 1px solid #ccc;">
         {{ value }}
     </div>
 } @else {
-    <div class="text-lg font-bold p-5 rounded-lg flex justify-content-center align-items-center" style="background-color: #480A91; color: white;">
+    <div class="md:text-lg text-sm font-bold md:p-5 p-3 rounded-lg flex justify-content-center align-items-center text-center" style="background-color: #480A91; color: white;">
         {{ value }}
     </div>
 }

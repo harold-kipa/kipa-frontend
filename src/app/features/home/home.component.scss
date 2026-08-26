@@ -13,3 +13,84 @@
     background-color: #8FD5FD60;
     font-weight: 700;
 }
+
+.hands-section {
+    height: 200vh;
+    position: relative;
+}
+
+.hands-container {
+    position: sticky;
+    top: 0;
+
+    height: 70vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.hand {
+    position: absolute;
+    width: 1500px;
+    will-change: transform;
+    // object-fit: none;
+    object-position: center;
+}
+
+.hand-left {
+    left: calc(50% - 350px);
+}
+
+.hand-right {
+    right: calc(50% - 350px);
+}
+
+.kipa-title {
+    font-family: poppins;
+    font-weight: 900;
+    color: #480A91;
+    letter-spacing: -4px;
+    font-size: 12rem;
+}
+
+.kipa-title-2 {
+    font-family:poppins; 
+    font-weight: 900; 
+    letter-spacing: -4px; 
+    font-size: 9rem
+}
+.kipa-title-3 {
+    color: white; 
+    -webkit-text-stroke: 2px #371460; 
+    font-size: 11rem
+}
+.kipa-title-4 {
+    font-family:poppins; 
+    letter-spacing: -4px; 
+    font-size: 7rem;
+}
+
+/* Celular */
+@media (max-width: 768px) {
+    .kipa-title {
+        font-size: 3rem;
+        letter-spacing: -2px;
+    }
+    .kipa-title-2 {
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+    }
+    .kipa-title-3 {
+        font-size: 3.5rem;
+        letter-spacing: -2px;
+        -webkit-text-stroke: 1px #371460; 
+    }
+    .kipa-title-4 {
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+    }
+}
