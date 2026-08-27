@@ -1,0 +1,40 @@
+.kipa-kpi{
+    background: linear-gradient(180deg, #480a91, #0a678f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family:poppins; 
+    letter-spacing: -4px; 
+    font-size: 7rem;
+    font-weight: bold;
+}
+.kipa-title{
+    color: white;
+    font-family:poppins; 
+    letter-spacing: -4px; 
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.kipa-number{
+    color: #64C6FF;
+    font-family:poppins; 
+    letter-spacing: -4px; 
+    font-size: 10rem;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .kipa-kpi {
+        font-size: 4rem;
+        letter-spacing: -2px;
+    }
+    .kipa-title{
+        font-size: 2rem;
+        letter-spacing: -1px;
+    }   
+    .kipa-number{
+        font-size: 7rem;
+        letter-spacing: -1px;
+    }   
+}
