@@ -4,7 +4,7 @@
 >
     <!-- Logo -->
     <div>
-        <a routerLink="/home">
+        <a href="home">
             <img
                 src="/assets/Isotipo_Principal.svg"
                 width="64"
@@ -15,13 +15,13 @@
 
     <!-- Menú escritorio -->
     <div class="hidden md:flex align-items-center">
-        <a routerLink="/chat-ia" class="button-var-nav">Inicio</a>
-        <a routerLink="/file-manager" class="button-var-nav">Nosotros</a>
-        <a routerLink="/users" class="button-var-nav">Consultoría</a>
-        <a routerLink="/dashboard" class="button-var-nav">Soluciones IA</a>
-        <a routerLink="/develop" class="button-var-nav">Academia</a>
-        <a routerLink="/develop" class="button-var-nav">Fintech</a>
-        <a routerLink="/develop" class="button-var-nav">Comunidad</a>
+        <a href="home" class="button-var-nav">Inicio</a>
+        <a href="nosotros" class="button-var-nav">Nosotros</a>
+        <a href="users" class="button-var-nav">Consultoría</a>
+        <a href="dashboard" class="button-var-nav">Soluciones IA</a>
+        <a href="develop" class="button-var-nav">Academia</a>
+        <a href="develop" class="button-var-nav">Fintech</a>
+        <a href="develop" class="button-var-nav">Comunidad</a>
     </div>
 
     <!-- Botón escritorio -->
@@ -44,45 +44,38 @@
     style="background-color: #F0EDE6;"
     class="md:hidden flex flex-column px-4 pb-4"
 >
-    <a routerLink="/chat-ia"
-       class="button-var-nav"
-       (click)="menuOpen = false">
+    <a href="home"
+       class="button-var-nav">
         Inicio
     </a>
 
-    <a routerLink="/file-manager"
-       class="button-var-nav"
-       (click)="menuOpen = false">
+    <a href="nosotros"
+       class="button-var-nav">
         Nosotros
     </a>
 
-    <a routerLink="/users"
-       class="button-var-nav"
-       (click)="menuOpen = false">
+    <a href="users"
+       class="button-var-nav">
         Consultoría
     </a>
 
-    <a routerLink="/dashboard"
-       class="button-var-nav"
-       (click)="menuOpen = false">
+    <a href="dashboard"
+       class="button-var-nav">
         Soluciones IA
     </a>
 
-    <a routerLink="/develop"
-       class="button-var-nav"
-       (click)="menuOpen = false">
+    <a href="develop"
+       class="button-var-nav">
         Academia
     </a>
 
-    <a routerLink="/develop"
-       class="button-var-nav"
-       (click)="menuOpen = false">
+    <a href="develop"
+       class="button-var-nav">
         Fintech
     </a>
 
-    <a routerLink="/develop"
-       class="button-var-nav"
-       (click)="menuOpen = false">
+    <a href="develop"
+       class="button-var-nav">
         Comunidad
     </a>
 

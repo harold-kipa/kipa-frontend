@@ -1,0 +1,16 @@
+<div style="background-color: white;" class="md:px-5 md:py-6 md:text-base text-xs w-full md:inline flex gap-3 p-2">
+    
+    <div [style.background-image]="'url(&quot;' + urlImg + '&quot;)'" style=" color: #480A91; background-size: cover; background-position: right; background-repeat: no-repeat;" class="border-circle md:w-4rem w-2rem md:h-4rem h-2rem m-2 font-bold flex align-items-center justify-content-center"></div>
+    <div class="flex align-content-center flex-wrap">
+        <div>
+            <div class="font-bold">{{name}}</div>
+            <div class="opacity-50">{{occupation}}</div>
+            <div class="md:flex hidden gap-1">
+                @for (item of label; track label) {
+                    <div class="px-1 opacity-20 text-sm" style="border: 1px solid #000;">{{item}}</div>
+                }
+            </div>
+            <div class="md:inline hidden">{{description}}</div>
+        </div>
+    </div>
+</div>
