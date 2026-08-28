@@ -26,6 +26,12 @@ export const routes: Routes = [
                         
                     },
                     {
+                        path: 'consultoria',
+                        loadComponent: () =>
+                            import('./features/consultancy/consultancy.component').then(m => m.ConsultancyComponent),
+                        
+                    },
+                    {
                         path: '**',
                         redirectTo: '/home',
                     },

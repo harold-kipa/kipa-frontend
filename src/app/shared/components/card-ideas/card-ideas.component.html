@@ -13,6 +13,28 @@
             <i class="pi pi-arrow-right md:hidden flex align-items-center"></i>
         </div>
 }
+@else if (type === 'secondary') {
+        <div class="glass-card md:p-5 p-4 md:py-7 font-semibold w-full flex justify-content-between border-round-3xl">
+            <div class="flex flex-column gap-2">
+                <div style="color: #371460;" class="font-bold md:inline hidden">{{ description }}</div>
+                <div class="flex flex-column gap-2" style="color: #371460;" [style.color]="textColor">
+                    <div class="font-bold md:text-4xl" >{{ title }}</div>
+                    <div class="md:text-2xl text-sm" >{{ subtitle }}</div>
+                    <div class="md:text-2xl text-sm">{{ text }}</div>
+                    <div class="md:flex hidden gap-1">
+                    @for (item of label; track label) {
+                            <div class="px-1 text-base" style="border: 1px solid #371460; " [style.border-color]="textColor">{{item}}</div>
+                        }
+                    </div>
+                    <div  class="font-semibold md:flex hidden flex-row align-items-center gap-6 cursor-pointer mt-auto">
+                        <div class="">Ver más</div>
+                        <i class="pi pi-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <i class="pi pi-arrow-right md:hidden flex align-items-center"></i>
+        </div>
+}
 @else {
     <div style="background-color: white;" class="md:p-6 p-4 font-semibold flex flex-column gap-4 w-full">
         <div style="background-color: #EDE5FA; color: #480A91" class="w-5rem px-3 font-bold md:text-base text-xs">{{ description }}</div>
