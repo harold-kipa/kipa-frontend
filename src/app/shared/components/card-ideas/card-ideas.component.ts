@@ -8,7 +8,10 @@ import { Component, Input } from '@angular/core';
 })
 export class CardIdeasComponent {
   @Input() type: string = '';
+  @Input() textColor: string = '#371460;';
   @Input() description: string = '';
+  @Input() subtitle: string = '';
   @Input() title: string = '';
   @Input() text: string = '';
+  @Input() label: any[] = [];
 }
