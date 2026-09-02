@@ -32,6 +32,12 @@ export const routes: Routes = [
                         
                     },
                     {
+                        path: 'soluciones',
+                        loadComponent: () =>
+                            import('./features/solutions/solutions.component').then(m => m.SolutionsComponent),
+                        
+                    },
+                    {
                         path: '**',
                         redirectTo: '/home',
                     },

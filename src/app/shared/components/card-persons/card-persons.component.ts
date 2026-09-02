@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
 })
 export class CardPersonsComponent {
   @Input() urlImg: string = '';
+  @Input() align: boolean = false;
   @Input() name: string = '';
   @Input() occupation: string = '';
   @Input() label: any[] = [];

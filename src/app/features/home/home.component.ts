@@ -11,51 +11,51 @@ import { AnimateOnScrollModule } from 'primeng/animateonscroll';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-@ViewChild('handsSection')
-    handsSection!: ElementRef;
+// @ViewChild('handsSection')
+//     handsSection!: ElementRef;
 
-    progress = 0;
+//     progress = 0;
 
-    get leftTransform(): string {
+//     get leftTransform(): string {
 
-        const start = -1400;
-        const end = -700;
+//         const start = -1400;
+//         const end = -700;
 
-        const x = start + (end - start) * this.progress;
+//         const x = start + (end - start) * this.progress;
 
-        return `translateX(${x}px)`;
-    }
+//         return `translateX(${x}px)`;
+//     }
 
-    get rightTransform(): string {
+//     get rightTransform(): string {
 
-        const start = 900;
-        const end = 450;
+//         const start = 900;
+//         const end = 450;
 
-        const x = start + (end - start) * this.progress;
+//         const x = start + (end - start) * this.progress;
 
-        return `translateX(${x}px)`;
-    }
+//         return `translateX(${x}px)`;
+//     }
 
 
-    @HostListener('window:scroll')
-    onScroll() {
+//     @HostListener('window:scroll')
+//     onScroll() {
 
-        if (!this.handsSection) return;
+//         if (!this.handsSection) return;
 
-        const section =
-            this.handsSection.nativeElement
-                .getBoundingClientRect();
+//         const section =
+//             this.handsSection.nativeElement
+//                 .getBoundingClientRect();
 
-        const scrollDistance =
-            section.height - window.innerHeight;
+//         const scrollDistance =
+//             section.height - window.innerHeight;
 
-        const current =
-            -section.top;
+//         const current =
+//             -section.top;
 
-        this.progress =
-            Math.min(
-                Math.max(current / scrollDistance, 0),
-                1
-            );
-    }
+//         this.progress =
+//             Math.min(
+//                 Math.max(current / scrollDistance, 0),
+//                 1
+//             );
+//     }
 }
