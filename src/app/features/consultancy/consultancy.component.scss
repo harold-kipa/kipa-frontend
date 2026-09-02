@@ -1,0 +1,31 @@
+.kipa-title {
+    font-family: poppins;
+    // font-weight: 900;
+    color: #371460;
+    letter-spacing: -4px;
+    font-size: 8rem;
+}
+.kipa-kpi{
+    color: #480a91;
+    font-family:poppins; 
+    letter-spacing: -4px; 
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.client-text{
+    background-color: white;
+    color:black;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+@media (max-width: 768px) {
+    .kipa-title {
+        font-size: 3rem;
+        letter-spacing: -2px;
+    }
+    .kipa-kpi {
+        font-size: 4rem;
+        letter-spacing: -2px;
+    }
+}
