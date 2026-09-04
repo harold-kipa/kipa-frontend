@@ -2,34 +2,133 @@
 <div style="background-color: #F0EDE6;">
     <div style="background-image: url('/assets/Background HERO.png');
         background-size: cover;" class="p-3">
-
-        <section #handsSection class="hands-section md:flex hidden">
-            <div class=" hands-container">
-                <img
-                    src="/assets/Mano humana HERO.png"
-                    height="auto"
-                    class="hand hand-left"
-                    [style.transform]="leftTransform"
-                    alt=""
-                />
-                <img
-                    src="/assets/Mano IA HERO.png"
-                    height="auto"
-                    class="hand hand-right"
-                    [style.transform]="rightTransform"
-                    alt=""
-                />
-                
+        <div class="md:flex">
+            <div class="md:w-5 flex flex-column gap-4 md:px-8">
+                <div style="color: #480A91;">
+                    DATOS, AUTOMATIZACIÓN, IA Y PERSONAS
+                </div>
+                <div class="kipa-title">Somos Kipa</div>
+                <div style="color:#480A91; font-family: poppins;" class="text-6xl font-semibold line-height-1">
+                    Inteligencia para potenciar cada <span style="color: #0E6191;">decisión.</span>
+                </div>
+                <div class="text-xl opacity-50">
+                    Combinamos el poder de los datos y la IA con el conocimiento humano para transformar operaciones, reducir riesgos y generar impacto real.
+                </div>
+                <div class="flex gap-3">
+                    <app-button type="secondary" value="Conoce nuestras soluciones"></app-button>
+                    <app-button value="Hablemos de tu reto"></app-button>
+                </div>
             </div>
-        </section>
-        <div>
+            <div class="flex md:w-7">
+
+                <!-- MANO IA -->
+                <div class="w-6 flex justify-content-end">
+                    <img
+                        src="/assets/Mano IA.png"
+                        class="fadeinleft animation-duration-1000 mano-ia"
+                        width="145%"
+                        style="object-position: right 50%; object-fit: contain; 
+                            mask-image: linear-gradient(
+                                to right,
+                                transparent 10%,
+                                black 60%,
+                                black 100%
+                            );"
+                        alt=""
+                    />
+                </div>
+
+                <!-- MANO HUMANA -->
+                <div class="w-6 flex justify-content-end">
+                    <img
+                        src="/assets/Mano humana.png"
+                        class="fadeinright animation-duration-1000"
+                        width="110%"
+                        style="object-position: left 60%; object-fit: contain;"
+                        alt=""
+                    />
+                </div>
+
+            </div>
+        </div>
+        <div class="md:flex md:w-10 md:px-8 md:py-4">
+            <div class="flex md:w-3 p-4">
+                <div class="w-4">
+                    <img
+                        src="/assets/iconHome1.png"
+                        height="auto"
+                        width="70%"
+                        alt=""
+                    />
+                </div>
+                <div class="w-8 flex align-content-center flex-wrap">
+                    <div>
+                        <div class="text-2xl font-bold">+135</div>
+                        <div>Organizaciones acompañadas</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex md:w-3 p-4">
+                <div class="w-4">
+                    <img
+                        src="/assets/iconHome2.png"
+                        height="auto"
+                        width="70%"
+                        alt=""
+                    />
+                </div>
+                <div class="w-8 flex align-content-center flex-wrap">
+                    <div>
+                        <div class="text-2xl font-bold">+100</div>
+                        <div>Proyectos implementados</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex md:w-3 p-4">
+                <div class="w-4">
+                    <img
+                        src="/assets/iconHome3.png"
+                        height="auto"
+                        width="70%"
+                        alt=""
+                    />
+                </div>
+                <div class="w-8 flex align-content-center flex-wrap">
+                    <div>
+                        <div class="text-2xl font-bold">+35K</div>
+                        <div>Profesionales formados</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex md:w-3 p-4">
+                <div class="w-4">
+                    <img
+                        src="/assets/iconHome4.png"
+                        height="auto"
+                        width="70%"
+                        alt=""
+                    />
+                </div>
+                <div class="w-8 flex align-content-center flex-wrap">
+                    <div>
+                        <div class="text-2xl font-bold">+98%</div>
+                        <div>Satisfacción de clientes</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        
+        
+        <!-- <div>
             <div class="kipa-title">Somos Kipa</div>
             <div class="md:text-7xl text-2xl md:w-6 w-8 font-semibold" style="color: #0E6191">Transformamos datos de IA en resultados</div>
             <div class="flex justify-content-center md:gap-8 gap-4 md:p-8 p-4">
                 <app-button value="Hablemos de tu reto"></app-button>
                 <app-button type="secondary" value="Conoce nuestras soluciones"></app-button>
             </div>
-        </div>
+        </div> -->
     </div>
     <div style="background-image: url('/assets/Rectangle.png');" class="md:p-8 p-4 text-lg flex flex-column md:flex-row md:gap-8 gap-4">
         <div class="md:w-5 flex gap-5 flex-column">
@@ -126,42 +225,42 @@
                     <div class="flex flex-column gap-1 md:p-8">
                         <div class="font-semibold py-3">Algunos aliados</div>
                         <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between h-3rem">
-                            <div>Bancolombia</div>
+                            <div>Asobancaria</div>
                             <img
-                                src="/assets/Logo_Bancolombia 1.svg"
-                                width="9%"
+                                src="/assets/empre_aAliada1_wipe_bg.png"
+                                width="50px"
                                 height="auto"
                             />
                         </div>
                         <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between h-3rem">
-                            <div>Grupo Sura</div>
+                            <div>Andesco</div>
                             <img
-                                src="/assets/logo-grupo-sura- 1.svg"
-                                width="10%"
+                                src="/assets/empre_aAliada2_wipe_bg.png"
+                                width="50px"
                                 height="auto"
                             />
                         </div>
                         <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between h-3rem">
-                            <div>Grupo Bavaria</div>
+                            <div>Cámara Colombiana de la Infraestructura</div>
                             <img
-                                src="/assets/LOGO-BAVARIA-BLANCO 1.svg"
-                                width="11%"
+                                src="/assets/empre_aAliada3_wipe_bg.png"
+                                width="50px"
                                 height="auto"
                             />
                         </div>
                         <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between h-3rem">
-                            <div>Compensar</div>
+                            <div>Cámara de Comercio de Bogotá</div>
                             <img
-                                src="/assets/Logo_Compensar 1.svg"
-                                width="11%"
+                                src="/assets/empre_aAliada4_wipe_bg.png"
+                                width="50px"
                                 height="auto"
                             />
                         </div>
                         <div class="hover-groups flex px-4 py-2 flex-row align-items-center justify-content-between h-3rem">
-                            <div>Steckerl Aceros</div>
+                            <div>Acef</div>
                             <img
-                                src="/assets/LOGOS-WEB-STECKERL 1.svg"
-                                width="30%"
+                                src="/assets/empre_aAliada5_wipe_bg.png"
+                                width="30px"
                                 height="auto"
                             />
                         </div>

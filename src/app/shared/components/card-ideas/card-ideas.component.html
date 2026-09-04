@@ -21,7 +21,7 @@
                     <div class="font-bold md:text-4xl" >{{ title }}</div>
                     <div class="md:text-2xl text-sm" >{{ subtitle }}</div>
                     <div class="md:text-2xl text-sm">{{ text }}</div>
-                    <div class="md:flex hidden gap-1">
+                    <div class="md:flex flex-wrap hidden gap-1">
                     @for (item of label; track label) {
                             <div class="px-1 text-base" style="border: 1px solid #371460; " [style.border-color]="textColor">{{item}}</div>
                         }
@@ -37,9 +37,14 @@
 }
 @else {
     <div style="background-color: white;" class="md:p-6 p-4 font-semibold flex flex-column gap-4 w-full">
-        <div style="background-color: #EDE5FA; color: #480A91" class="w-5rem px-3 font-bold md:text-base text-xs">{{ description }}</div>
+        <div style="background-color: #EDE5FA; color: #480A91" class="w-7rem px-3 font-bold text-xs">{{ description }}</div>
         <div class="font-bold md:text-xl" style="color: #480A91;">{{ title }}</div>
-        <div class="opacity-30 md:text-base text-sm">{{ text }}</div>
+        <div class="md:text-base text-sm">{{ text }}</div>
+        <div class="md:flex flex-wrap hidden gap-1">
+            @for (item of label; track label) {
+                    <div class="px-1 text-base opacity-30" style="border: 1px solid; ">{{item}}</div>
+                }
+        </div>
         <div style="color: #480A91;" class="font-semibold flex flex-row align-items-center gap-6 cursor-pointer mt-auto">
             <div class="">Leer</div>
             <i class="pi pi-arrow-right"></i>

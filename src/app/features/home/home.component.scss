@@ -35,26 +35,26 @@
 
 .hand {
     position: absolute;
-    width: 1500px;
+    width: 150px;
     will-change: transform;
     // object-fit: none;
     object-position: center;
 }
 
-.hand-left {
-    left: calc(50% - 350px);
-}
+// .hand-left {
+//     left: calc(50% - 350px);
+// }
 
-.hand-right {
-    right: calc(50% - 350px);
-}
+// .hand-right {
+//     right: calc(50% - 350px);
+// }
 
 .kipa-title {
     font-family: poppins;
     font-weight: 900;
     color: #480A91;
     letter-spacing: -4px;
-    font-size: 12rem;
+    font-size: 5rem;
 }
 
 .kipa-title-2 {
