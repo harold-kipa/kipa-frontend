@@ -38,6 +38,12 @@ export const routes: Routes = [
                         
                     },
                     {
+                        path: 'comunidad',
+                        loadComponent: () =>
+                            import('./features/community/community.component').then(m => m.CommunityComponent),
+                        
+                    },
+                    {
                         path: '**',
                         redirectTo: '/home',
                     },
