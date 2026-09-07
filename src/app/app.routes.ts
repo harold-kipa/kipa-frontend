@@ -44,6 +44,12 @@ export const routes: Routes = [
                         
                     },
                     {
+                        path: 'academia',
+                        loadComponent: () =>
+                            import('./features/academy/academy.component').then(m => m.AcademyComponent),
+                        
+                    },
+                    {
                         path: '**',
                         redirectTo: '/home',
                     },

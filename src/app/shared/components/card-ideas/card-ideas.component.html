@@ -35,6 +35,40 @@
             <i class="pi pi-arrow-right md:hidden flex align-items-center"></i>
         </div>
 }
+@else if (type.includes('tertiary')) {
+    <div class="md:p-5 p-4 font-semibold flex justify-content-between flex-wrap w-full">
+        <div class="flex flex-column gap-2">
+            @if (description!=='') {
+                @if (type === 'tertiary-2') {
+                    <div style="color: #480A91" class=" font-bold inline">{{ description }}</div>
+                }
+                @else {
+                    <div style="background-color: #EDE5FA; color: #480A91" class="w-7rem px-3 font-bold inline">{{ description }}</div>
+                }
+            }
+            <div class="md:text-xl inline">{{ title }}</div>
+            <div class="md:text-base text-sm opacity-30">{{ text }}</div>
+            <div class="md:flex flex-wrap hidden gap-1">
+                @for (item of label; track label) {
+                        <div class="px-1 text-base opacity-30" style="border: 1px solid; ">{{item}}</div>
+                    }
+            </div>
+        </div>
+        @if (type === 'tertiary-3') {
+            <div style="color: white; background-color: #480A91;" class="font-semibold opacity-30 py-3 flex flex-row align-items-center gap-6 cursor-pointer mt-auto">
+                Solicitar propuesta
+            </div>
+        }
+        @else {
+            <div style="color: white; background-color: #480A91;" class="font-semibold border-2 p-3 md:flex hidden flex-row align-items-center gap-6 cursor-pointer mt-auto">
+                Inscribirme
+            </div>
+            <div style="color: white; background-color: #480A91;" class="font-semibold border-2 p-3 md:hidden flex flex-row align-items-center gap-6 cursor-pointer mt-auto">
+                <i class="pi pi-arrow-right"></i>
+            </div>
+        }
+    </div>
+}
 @else {
     <div style="background-color: white;" class="md:p-6 p-4 font-semibold flex flex-column gap-4 w-full">
         <div style="background-color: #EDE5FA; color: #480A91" class="w-7rem px-3 font-bold text-xs">{{ description }}</div>
