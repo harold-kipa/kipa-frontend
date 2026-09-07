@@ -38,6 +38,18 @@ export const routes: Routes = [
                         
                     },
                     {
+                        path: 'comunidad',
+                        loadComponent: () =>
+                            import('./features/community/community.component').then(m => m.CommunityComponent),
+                        
+                    },
+                    {
+                        path: 'academia',
+                        loadComponent: () =>
+                            import('./features/academy/academy.component').then(m => m.AcademyComponent),
+                        
+                    },
+                    {
                         path: '**',
                         redirectTo: '/home',
                     },
